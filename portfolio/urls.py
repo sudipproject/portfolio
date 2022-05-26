@@ -20,8 +20,8 @@ from .import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/',views.about),
-    path('contact/',views.contact),
-    path('',views.home),
+    path('about_us/',views.about,name='about'),
+    path('contact_us/',views.contact,name='contact'),
+    path('',views.home,name='home'),
     path('employee/',include('employee.urls'))
 ]
